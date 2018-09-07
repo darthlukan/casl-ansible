@@ -7,9 +7,9 @@ nodes
 etcd
 
 [masters]
-openshift-master-1.c1-ocp.myorg.com ansible_host=openshift-master-1.c1-ocp.myorg.com
-openshift-master-2.c1-ocp.myorg.com ansible_host=openshift-master-2.c1-ocp.myorg.com
-openshift-master-3.c1-ocp.myorg.com ansible_host=openshift-master-3.c1-ocp.myorg.com
+openshift-master-1.c1-ocp.myorg.com ansible_host=openshift-master-1.c1-ocp.myorg.com openshift_node_group_name='node-config-master-infra'
+openshift-master-2.c1-ocp.myorg.com ansible_host=openshift-master-2.c1-ocp.myorg.com openshift_node_group_name='node-config-master-infra'
+openshift-master-3.c1-ocp.myorg.com ansible_host=openshift-master-3.c1-ocp.myorg.com openshift_node_group_name='node-config-master-infra'
 
 [etcd]
 openshift-master-1.c1-ocp.myorg.com ansible_host=openshift-master-1.c1-ocp.myorg.com
